@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import com.marketplace.main.models.User;
 
 @EnableMongoRepositories
-public interface userRepository extends MongoRepository<User, String> {
+public interface UserRepository extends MongoRepository<User, String> {
       /* Filter: id, name and email */
       Optional<User> findById(String id);
       List<User> findByName(String name);
